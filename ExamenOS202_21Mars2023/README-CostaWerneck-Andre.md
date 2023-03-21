@@ -35,11 +35,18 @@ SpeedUp affichage	1	1,842762521	2,066830107	1,860802603	2,029060226	2,072917142
 
 lignes de commande:
 
-mpiexec -n 16 --oversubscribe python3 -m mpi4py automate_parallel_statique.py
+mpiexec -n 4 --oversubscribe python3 -m mpi4py automate_parallel_statique.py
 
 
-mpiexec -n 16 --oversubscribe python3 -m mpi4py automate_parallel_maitre_sclave.py 
+mpiexec -n 4 --oversubscribe python3 -m mpi4py automate_parallel_maitre_sclave.py 
 
 QUESTION 2
 
 Pour la premiere partie de cetet question. L'idée était de faire une parallélisation statique du programme. Pour la deuxieme partie de l'algo, l'idée était échanger les données modulo 2 (si modulo = 0 -> processus suivante, sinon processus contraire) et après faire un recv et un send à chaque 2 processus, pour tout rejoindre et aussi pour tout envoyer à l'autre processus. Et, à la fin, il fallait refaire l'algo pour les données mélangées.
+
+lignes de commande:
+
+
+mpiexec -n 4 --oversubscribe python3 -m mpi4py enveloppe_parallel.py 
+
+
