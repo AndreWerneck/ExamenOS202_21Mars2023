@@ -1,8 +1,8 @@
 INTRODUCTION 
 
-image.png
-image.png
-image.png
+![image](https://user-images.githubusercontent.com/40474628/226589205-298b30c2-8bd1-4ab0-b3f2-a9f1c7401fd0.png)
+
+![image](https://user-images.githubusercontent.com/40474628/226589356-011704aa-307e-4ca0-810e-6137f7a19d48.png)
 
 D'après les images, on peut voire que le nombre de coeurs physiques de mon ordinateur est de 2 unités et le nombre de coeurs logiques est de 4 unités.
 
@@ -14,7 +14,7 @@ Pour la première question, 2 stratégies de parallélisation étaient étudiés
 
 Pour la paralélisation statique, on a parallélisé le premier boucle et pour la parallélisation dynamique, on a parallélisé le deuxième boucle. Vous pouvez regarder dans le code source comme cela a été fait. Comme je croyait déjà, la parallélisation statique a donnée un speed-up positif. En revanche, la parallélisation dynamique de la façon faite, nous a donnée un speed-up negatif. La courbe pour la parallélisation statique est le suivante. Comme le speed-up était négatif pour la dynamique, on va pas montrer la courbe.
 
-image.png
+![image](https://user-images.githubusercontent.com/40474628/226589015-6ce0c78e-abc9-465d-93f2-13c6d794584d.png)
 
 On peut remarquer qu'on a obtenu un speed-up avec le parallélisation statique.
 
@@ -24,6 +24,11 @@ temps calcul	1,4565	0,851063	0,740989	0,875835	0,869799	0,947672
 temps affichage	15,9	8,628	7,6929	8,5447	7,8361	7,6704
 SpeedUp calcul	1	1,711389169	1,965616224	1,662984466	1,674524804	1,536924168
 SpeedUp affichage	1	1,842762521	2,066830107	1,860802603	2,029060226	2,072917142
+
+lignes de commande:
+
+mpiexec -n 16 --oversubscribe python3 -m mpi4py automate_parallel_statique.py
+mpiexec -n 16 --oversubscribe python3 -m mpi4py automate_parallel_maitre_sclave.py 
 
 QUESTION 2
 
