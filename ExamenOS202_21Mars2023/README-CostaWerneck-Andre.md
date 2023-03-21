@@ -20,9 +20,17 @@ On peut remarquer qu'on a obtenu un speed-up avec le parallélisation statique.
 
 Statique						
 nbp	1	2	3	4	8	16
+
+
 temps calcul	1,4565	0,851063	0,740989	0,875835	0,869799	0,947672
+
+
 temps affichage	15,9	8,628	7,6929	8,5447	7,8361	7,6704
+
+
 SpeedUp calcul	1	1,711389169	1,965616224	1,662984466	1,674524804	1,536924168
+
+
 SpeedUp affichage	1	1,842762521	2,066830107	1,860802603	2,029060226	2,072917142
 
 lignes de commande:
