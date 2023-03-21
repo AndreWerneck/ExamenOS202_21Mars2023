@@ -28,6 +28,8 @@ SpeedUp affichage	1	1,842762521	2,066830107	1,860802603	2,029060226	2,072917142
 lignes de commande:
 
 mpiexec -n 16 --oversubscribe python3 -m mpi4py automate_parallel_statique.py
+
+
 mpiexec -n 16 --oversubscribe python3 -m mpi4py automate_parallel_maitre_sclave.py 
 
 QUESTION 2
